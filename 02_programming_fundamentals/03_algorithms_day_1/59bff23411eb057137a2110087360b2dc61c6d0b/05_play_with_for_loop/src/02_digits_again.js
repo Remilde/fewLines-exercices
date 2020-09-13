@@ -5,3 +5,4 @@ const digits = [];
 for(let i=0 ; i<10; i++) {
   digits.push(i);
 }
+console.log(digits);
