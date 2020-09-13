@@ -10,9 +10,9 @@ if((star.spectralClass === "K" || star.spectralClass === "M") && planet.habitalZ
     if(planet.radius > 0.5 && planet.radius < 2.5){        
         if(planet.mass >= 0.5) {
             canHabitateLife = true;
-    }   else if(planet.radius >= 1) {
+        }   else if(planet.radius >= 1) {
           canHabitateLife = true;
-    }
+        }
     }
 }
 // Don't modifiy this line for test to work properly.
