@@ -1,4 +1,4 @@
-function getConfig(config) {
+function getConfig(config = {}) {
   const defaultConfig = {
     user: {
       name: "root",
@@ -10,8 +10,7 @@ function getConfig(config) {
       diskSpace: 20,
     },
   };
-
-  return /** Complete here */;
+  return {defaultConfig, ...config}/** Complete here */;
 }
 
 function logInfos(user) {
