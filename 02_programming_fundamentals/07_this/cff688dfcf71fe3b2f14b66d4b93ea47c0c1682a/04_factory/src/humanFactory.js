@@ -10,12 +10,10 @@ const humanFactory = (object) => {
     introduction: `Hello! My name is ${this.fullname}`,
   };
   console.log(abdel.fullname());
+  Object.keys
   return {
     ...abdel,
-    firstname: object.firstname,
-    lastname: object.lastname,
-    genre: object.genre,
-    job: object.job, 
+    Object.key(object)
   };
 };
 humanFactory();
