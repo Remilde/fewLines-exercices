@@ -1,5 +1,11 @@
 import * as mongo from "mongodb";
 
-export function findManyCountries() {
-  // code your function here
+export function findManyCountries(db: mongo.Db) {
+  return db
+    .collection("worldAtlas")
+    .find({ continent: "Europe" })
+    .toArray()
+    .then((result) => {
+      return result;
+    });
 }
